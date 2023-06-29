@@ -29,7 +29,7 @@ public class DbConnection {
         if(connection==null){
 
             try {
-                connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/book_list","root","64125494944");
+                connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/database","user","password");
                 state = !state;
             } catch (SQLException e) {
                 throw new RuntimeException(e);
